@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		AA281B2926983FC400F7A285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA281B2826983FC400F7A285 /* ContentView.swift */; };
 		AA281B2B26983FC500F7A285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281B2A26983FC500F7A285 /* Assets.xcassets */; };
 		AA281B2E26983FC500F7A285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281B2D26983FC500F7A285 /* Preview Assets.xcassets */; };
+		AA281B522698AB4900F7A285 /* CrowdConnectedCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA281B512698AB4900F7A285 /* CrowdConnectedCore */; };
+		AA281B552698AB5D00F7A285 /* CrowdConnectedIPS in Frameworks */ = {isa = PBXBuildFile; productRef = AA281B542698AB5D00F7A285 /* CrowdConnectedIPS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA281B522698AB4900F7A285 /* CrowdConnectedCore in Frameworks */,
+				AA281B552698AB5D00F7A285 /* CrowdConnectedIPS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,10 @@
 			dependencies = (
 			);
 			name = TestSPMIntegration;
+			packageProductDependencies = (
+				AA281B512698AB4900F7A285 /* CrowdConnectedCore */,
+				AA281B542698AB5D00F7A285 /* CrowdConnectedIPS */,
+			);
 			productName = TestSPMIntegration;
 			productReference = AA281B2326983FC400F7A285 /* TestSPMIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,10 @@
 				Base,
 			);
 			mainGroup = AA281B1A26983FC400F7A285;
+			packageReferences = (
+				AA281B502698AB4900F7A285 /* XCRemoteSwiftPackageReference "crowdconnected-core-ios" */,
+				AA281B532698AB5D00F7A285 /* XCRemoteSwiftPackageReference "crowdconnected-ips-ios" */,
+			);
 			productRefGroup = AA281B2426983FC400F7A285 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +340,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA281B502698AB4900F7A285 /* XCRemoteSwiftPackageReference "crowdconnected-core-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:crowdconnected/crowdconnected-core-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		AA281B532698AB5D00F7A285 /* XCRemoteSwiftPackageReference "crowdconnected-ips-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:crowdconnected/crowdconnected-ips-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA281B512698AB4900F7A285 /* CrowdConnectedCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA281B502698AB4900F7A285 /* XCRemoteSwiftPackageReference "crowdconnected-core-ios" */;
+			productName = CrowdConnectedCore;
+		};
+		AA281B542698AB5D00F7A285 /* CrowdConnectedIPS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA281B532698AB5D00F7A285 /* XCRemoteSwiftPackageReference "crowdconnected-ips-ios" */;
+			productName = CrowdConnectedIPS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA281B1B26983FC400F7A285 /* Project object */;
 }

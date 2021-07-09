@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AWSiOSSDKV2",
+        "repositoryURL": "https://github.com/aws-amplify/aws-sdk-ios-spm",
+        "state": {
+          "branch": null,
+          "revision": "13457a1154b7da58351b793bf34f1a2808c5b597",
+          "version": "2.24.3"
+        }
+      },
+      {
+        "package": "CrowdConnectedCore",
+        "repositoryURL": "git@github.com:crowdconnected/crowdconnected-core-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "f75a12a0dcec3dbcdee7403fcfe9db202952e84b",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "CrowdConnectedIPS",
+        "repositoryURL": "git@github.com:crowdconnected/crowdconnected-ips-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "2eab3de864ab88b8ca4306fb66e1a0b5db4e0731",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "CrowdConnectedShared",
+        "repositoryURL": "https://github.com/crowdconnected/crowdconnected-shared-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "95c4af4c065a6370496637b756799630073fb0ad",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
