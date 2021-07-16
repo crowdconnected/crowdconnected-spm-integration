@@ -52,7 +52,7 @@ This can be done by adding two descriptions in your `Info.plist` file as follows
 <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>	
 <string>YOUR DESCRIPTIVE TEXT HERE</string>
 ```
-In the best suitable place/slow in your app, ask the user for location permission.
+In the best suitable place in your app, ask the user for location permission.
 ```
 let locationManager = CLLocationManager()
 locationManager..requestAlwaysAuthorization()
