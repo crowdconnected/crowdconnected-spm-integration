@@ -36,7 +36,7 @@ This can be done by adding a description in your `Info.plist` file as follows:
 <key>NSLocationWhenInUseUsageDescription</key>	
 <string>YOUR DESCRIPTIVE TEXT HERE</string>
 ```
-In the best suitable place/slow in your app, ask the user for location permission.
+In the best suitable place in your app, ask the user for location permission.
 ```
 let locationManager = CLLocationManager()
 locationManager..requestWhenInUseAuthorization()
@@ -79,4 +79,8 @@ Set the delegate for the SDK:
 ```
 let locationProvider = LocationProvider()
 CrowdConnected.shared.delegate = locationProvider
+```
+For stopping the location updates stream, either deinitialize the `locationProvider` object or reset the delegate as follows:
+```
+CrowdConnected.shared.delegate = nil
 ```
