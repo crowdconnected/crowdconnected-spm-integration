@@ -2,9 +2,11 @@
 
 import SwiftUI
 import CoreLocation
+//import CrowdConnectedShared
 import CrowdConnectedCore
 import CrowdConnectedIPS
-import CrowdConnectedShared
+import CrowdConnectedCoreBluetooth
+import CrowdConnectedGeo
 
 @main
 struct TestSPMIntegrationApp: App {
@@ -15,6 +17,8 @@ struct TestSPMIntegrationApp: App {
     init() {
 
         CrowdConnectedIPS.activate()
+        CrowdConnectedCoreBluetooth.activate()
+        CrowdConnectedGeo.activate()
         CrowdConnected.shared.start(appKey: "appkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
             guard let id = deviceId else {
                 return
@@ -24,6 +28,8 @@ struct TestSPMIntegrationApp: App {
         }
 
         CrowdConnected.shared.delegate = locationsProvider
+        CrowdConnected.shared.setAlias(key: "", value: "")
+
         locationManager.requestWhenInUseAuthorization()
     }
 

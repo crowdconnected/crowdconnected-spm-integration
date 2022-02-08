@@ -6,26 +6,44 @@
         "repositoryURL": "https://github.com/aws-amplify/aws-sdk-ios-spm",
         "state": {
           "branch": null,
-          "revision": "13457a1154b7da58351b793bf34f1a2808c5b597",
-          "version": "2.24.3"
+          "revision": "2fbb2199cee0124c584e58c5753c05e10e7d7348",
+          "version": "2.27.1"
+        }
+      },
+      {
+        "package": "CrowdConnectedCoreBluetooth",
+        "repositoryURL": "https://github.com/crowdconnected/crowdconnected-core-bluetooth-ios",
+        "state": {
+          "branch": null,
+          "revision": "5e1aeebcc457a63a286ad48c0e279b20d8d578d7",
+          "version": "1.2.1"
         }
       },
       {
         "package": "CrowdConnectedCore",
-        "repositoryURL": "git@github.com:crowdconnected/crowdconnected-core-ios.git",
+        "repositoryURL": "https://github.com/crowdconnected/crowdconnected-core-ios",
         "state": {
           "branch": null,
-          "revision": "f75a12a0dcec3dbcdee7403fcfe9db202952e84b",
-          "version": "1.0.0"
+          "revision": "86954336f7e9143edfaf4c3c101e48d613f50685",
+          "version": "1.2.1"
+        }
+      },
+      {
+        "package": "CrowdConnectedGeo",
+        "repositoryURL": "https://github.com/crowdconnected/crowdconnected-geo-ios",
+        "state": {
+          "branch": null,
+          "revision": "8b8711fc8b2fd21b75ba304789cdf85afec5a384",
+          "version": "1.2.1"
         }
       },
       {
         "package": "CrowdConnectedIPS",
-        "repositoryURL": "git@github.com:crowdconnected/crowdconnected-ips-ios.git",
+        "repositoryURL": "https://github.com/crowdconnected/crowdconnected-ips-ios",
         "state": {
           "branch": null,
-          "revision": "2eab3de864ab88b8ca4306fb66e1a0b5db4e0731",
-          "version": "1.0.0"
+          "revision": "090bd1e034af635690a09429d1c0c161fc9d48a3",
+          "version": "1.2.1"
         }
       },
       {
@@ -33,8 +51,8 @@
         "repositoryURL": "https://github.com/crowdconnected/crowdconnected-shared-ios.git",
         "state": {
           "branch": null,
-          "revision": "95c4af4c065a6370496637b756799630073fb0ad",
-          "version": "1.0.0"
+          "revision": "9dcf4e9c4deb7d86a83a4950584545cb01744625",
+          "version": "1.2.1"
         }
       }
     ]

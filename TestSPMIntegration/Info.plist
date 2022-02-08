@@ -48,5 +48,9 @@
 	</array>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Enable location permission when using the app so SAIL can provide you indoor navigation.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Hey! I need Bluetooth permission.</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Hey! I need Bluetooth permission when the app is in background.</string>
 </dict>
 </plist>
