@@ -21,10 +21,11 @@ struct TestSPMIntegrationApp: App {
         CrowdConnectedGeo.activate()
         CrowdConnected.shared.start(appKey: "appkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
             guard let id = deviceId else {
+                // Check the error and make sure to start the library correctly
                 return
             }
 
-            print(id)
+            // Library started successfully
         }
 
         CrowdConnected.shared.delegate = locationsProvider
@@ -42,6 +43,6 @@ struct TestSPMIntegrationApp: App {
 
 class LocationsProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
-        print("Got new location update")
+        // Use the location updates as you need
     }
 }
