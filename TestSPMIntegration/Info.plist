@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Hey! I need Bluetooth permission.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Hey! I need Bluetooth permission when the app is in background.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Enable location permission when using the app so SAIL can provide you indoor navigation.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -27,6 +33,10 @@
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -46,11 +56,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Enable location permission when using the app so SAIL can provide you indoor navigation.</string>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>Hey! I need Bluetooth permission.</string>
-    <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>Hey! I need Bluetooth permission when the app is in background.</string>
 </dict>
 </plist>

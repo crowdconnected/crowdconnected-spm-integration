@@ -2,7 +2,7 @@
 
 import SwiftUI
 import CoreLocation
-//import CrowdConnectedShared
+import CrowdConnectedShared
 import CrowdConnectedCore
 import CrowdConnectedIPS
 import CrowdConnectedCoreBluetooth
@@ -15,21 +15,26 @@ struct TestSPMIntegrationApp: App {
     let locationManager = CLLocationManager()
 
     init() {
-
         CrowdConnectedIPS.activate()
         CrowdConnectedCoreBluetooth.activate()
         CrowdConnectedGeo.activate()
+
         CrowdConnected.shared.start(appKey: "appkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
-            guard let id = deviceId else {
-                // Check the error and make sure to start the library correctly
+            if let errorMessage = error {
+                print("⚠️ CrowdConnected SDK has failed to start. Error: \(errorMessage)")
                 return
             }
-
-            // Library started successfully
+            if let deviceId = deviceId {
+                print("✅ CrowdConnected SDK has started with device ID \(deviceId)")
+                return
+            }
+            print("❌ CrowdConnected SDK failed to start. Invalid callback as no error and no device ID were provided.")
         }
 
         CrowdConnected.shared.delegate = locationsProvider
         CrowdConnected.shared.setAlias(key: "", value: "")
+        CrowdConnected.shared.activateSDKBackgroundRefresh()
+        CrowdConnected.shared.scheduleRefresh()
 
         locationManager.requestWhenInUseAuthorization()
     }
@@ -41,8 +46,12 @@ struct TestSPMIntegrationApp: App {
     }
 }
 
-class LocationsProvider: CrowdConnectedDelegate {
+final class LocationsProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
-        // Use the location updates as you need
+        guard let location = locations.first else {
+            print("📍 CrowdConnected SDK has triggered an update with no locations")
+            return
+        }
+        print("📍 New location update from CrowdConnected SDK. (\(location.latitude),\(location.longitude))")
     }
 }

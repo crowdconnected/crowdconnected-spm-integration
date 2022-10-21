@@ -4,7 +4,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("This is a SPM integration test for the CrowdConnected SDK")
+            .font(.subheadline)
+            .multilineTextAlignment(.center)
             .padding()
     }
 }
