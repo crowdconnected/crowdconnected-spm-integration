@@ -19,7 +19,7 @@ struct TestSPMIntegrationApp: App {
         CrowdConnectedCoreBluetooth.activate()
         CrowdConnectedGeo.activate()
 
-        CrowdConnected.shared.start(appKey: "appkey", token: "iosuser", secret: "Ea80e182$") { deviceId, error in
+        CrowdConnected.shared.start(appKey: "DgHLHQnk", token: "35df4a7e4dfb4b6aaa0bc881e5151362", secret: "Y6896N775lLh3cPaT4TE7L9G3o68lp28") { deviceId, error in
             if let errorMessage = error {
                 print("⚠️ CrowdConnected SDK has failed to start. Error: \(errorMessage)")
                 return
