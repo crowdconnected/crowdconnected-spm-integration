@@ -52,6 +52,6 @@ final class LocationsProvider: CrowdConnectedDelegate {
             print("📍 CrowdConnected SDK has triggered an update with no locations")
             return
         }
-        print("📍 New location update from CrowdConnected SDK. (\(location.latitude),\(location.longitude))")
+        print("📍 New location update from CrowdConnected SDK. (\(location.latitude),\(location.longitude)) quality \(location.quality)")
     }
 }

@@ -12,6 +12,7 @@
 		AA281B2926983FC400F7A285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA281B2826983FC400F7A285 /* ContentView.swift */; };
 		AA281B2B26983FC500F7A285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281B2A26983FC500F7A285 /* Assets.xcassets */; };
 		AA281B2E26983FC500F7A285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA281B2D26983FC500F7A285 /* Preview Assets.xcassets */; };
+		AA2F2ECD2BC5473B006404EF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA2F2EC82BC53FFE006404EF /* PrivacyInfo.xcprivacy */; };
 		AA67B4FE2836BF630067D2DC /* CrowdConnectedCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA67B4FD2836BF630067D2DC /* CrowdConnectedCore */; };
 		AA9C864327B172320094FD9A /* CrowdConnectedIPS in Frameworks */ = {isa = PBXBuildFile; productRef = AA9C864227B172320094FD9A /* CrowdConnectedIPS */; };
 		AA9C864627B172430094FD9A /* CrowdConnectedGeo in Frameworks */ = {isa = PBXBuildFile; productRef = AA9C864527B172430094FD9A /* CrowdConnectedGeo */; };
@@ -25,6 +26,7 @@
 		AA281B2A26983FC500F7A285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA281B2D26983FC500F7A285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA281B2F26983FC500F7A285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2F2EC82BC53FFE006404EF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				AA281B2626983FC400F7A285 /* TestSPMIntegrationApp.swift */,
+				AA2F2EC82BC53FFE006404EF /* PrivacyInfo.xcprivacy */,
 				AA281B2826983FC400F7A285 /* ContentView.swift */,
 				AA281B2A26983FC500F7A285 /* Assets.xcassets */,
 				AA281B2F26983FC500F7A285 /* Info.plist */,
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2F2ECD2BC5473B006404EF /* PrivacyInfo.xcprivacy in Resources */,
 				AA281B2E26983FC500F7A285 /* Preview Assets.xcassets in Resources */,
 				AA281B2B26983FC500F7A285 /* Assets.xcassets in Resources */,
 			);
@@ -369,7 +373,7 @@
 			repositoryURL = "https://github.com/crowdconnected/crowdconnected-shared-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.6.1;
+				version = 1.6.3;
 			};
 		};
 		AA67B4FC2836BF630067D2DC /* XCRemoteSwiftPackageReference "crowdconnected-core-ios" */ = {
@@ -377,7 +381,7 @@
 			repositoryURL = "https://github.com/crowdconnected/crowdconnected-core-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.6.1;
+				version = 1.6.3;
 			};
 		};
 		AA9C864127B172320094FD9A /* XCRemoteSwiftPackageReference "crowdconnected-ips-ios" */ = {
@@ -385,7 +389,7 @@
 			repositoryURL = "https://github.com/crowdconnected/crowdconnected-ips-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.6.1;
+				version = 1.6.3;
 			};
 		};
 		AA9C864427B172430094FD9A /* XCRemoteSwiftPackageReference "crowdconnected-geo-ios" */ = {
@@ -393,7 +397,7 @@
 			repositoryURL = "https://github.com/crowdconnected/crowdconnected-geo-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.6.1;
+				version = 1.6.3;
 			};
 		};
 		AA9C864727B172510094FD9A /* XCRemoteSwiftPackageReference "crowdconnected-core-bluetooth-ios" */ = {
@@ -401,7 +405,7 @@
 			repositoryURL = "https://github.com/crowdconnected/crowdconnected-core-bluetooth-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.6.1;
+				version = 1.6.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
