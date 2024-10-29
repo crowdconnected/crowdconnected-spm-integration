@@ -19,16 +19,16 @@ struct TestSPMIntegrationApp: App {
         CrowdConnectedCoreBluetooth.activate()
         CrowdConnectedGeo.activate()
 
-        CrowdConnected.shared.start(appKey: "DgHLHQnk", token: "35df4a7e4dfb4b6aaa0bc881e5151362", secret: "Y6896N775lLh3cPaT4TE7L9G3o68lp28") { deviceId, error in
-            if let errorMessage = error {
-                print("⚠️ CrowdConnected SDK has failed to start. Error: \(errorMessage)")
+        let credentials = SDKCredentials(appKey: "25948be6",
+                                         token: "3a6b436f863d474a8429200d0f97f1c0",
+                                         secret: "1Tw31194j56K891jMSx5Pfj2vdIa2a58")
+        CrowdConnected.shared.start(credentials: credentials,
+                                    trackingMode: .foregroundOnly) { deviceID, result in
+            guard case .success = result, let deviceID else {
+                print("❌ CrowdConnected SDK has failed to start. Error: \(result.description)")
                 return
             }
-            if let deviceId = deviceId {
-                print("✅ CrowdConnected SDK has started with device ID \(deviceId)")
-                return
-            }
-            print("❌ CrowdConnected SDK failed to start. Invalid callback as no error and no device ID were provided.")
+            print("✅ CrowdConnected SDK has started with device ID \(deviceID)")
         }
 
         CrowdConnected.shared.delegate = locationsProvider
@@ -46,6 +46,9 @@ struct TestSPMIntegrationApp: App {
     }
 }
 
+// Should produce 1 Geo position if ran on a simulator.
+// Should produce 1 Geo position and multiple IPS positions if ran on a device and there's a beacon nearby.
+// Beacon nearby should be RFID f85fe6b8-8afb-47bf-a97b-769f2df022a9:0:123
 final class LocationsProvider: CrowdConnectedDelegate {
     func didUpdateLocation(_ locations: [Location]) {
         guard let location = locations.first else {
