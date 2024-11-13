@@ -24,8 +24,12 @@
 	<string>Hey! I need Bluetooth permission.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Hey! I need Bluetooth permission when the app is in background.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Hey! I need always location permission.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Hey! I need always location permission.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Enable location permission when using the app so SAIL can provide you indoor navigation.</string>
+	<string>Hey! I need location permission while in use.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

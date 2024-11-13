@@ -23,7 +23,7 @@ struct TestSPMIntegrationApp: App {
                                          token: "3a6b436f863d474a8429200d0f97f1c0",
                                          secret: "1Tw31194j56K891jMSx5Pfj2vdIa2a58")
         CrowdConnected.shared.start(credentials: credentials,
-                                    trackingMode: .foregroundOnly) { deviceID, result in
+                                    trackingMode: .foregroundAndBackground) { deviceID, result in
             guard case .success = result, let deviceID else {
                 print("❌ CrowdConnected SDK has failed to start. Error: \(result.description)")
                 return
