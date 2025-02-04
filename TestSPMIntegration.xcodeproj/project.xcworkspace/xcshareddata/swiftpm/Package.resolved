@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/crowdconnected/crowdconnected-core-bluetooth-ios",
       "state" : {
-        "revision" : "413f307e47ca5b298600a6163e2d711ed537a055",
-        "version" : "2.0.0"
+        "revision" : "623493f0a7a4badc418acde3e3a5f446d0c11ea1",
+        "version" : "2.1.2"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/crowdconnected/crowdconnected-core-ios",
       "state" : {
-        "revision" : "6b5d84b31a658dd74621ade9dae5454c1a8e1b4b",
-        "version" : "2.0.0"
+        "revision" : "ffd37c4e0172a16350e59fc1abad93882f18990e",
+        "version" : "2.1.2"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/crowdconnected/crowdconnected-geo-ios",
       "state" : {
-        "revision" : "6ddb299188e7d13ed6e4ead83f8bf4bbe6ccbb6d",
-        "version" : "2.0.0"
+        "revision" : "61e4d743e8cd4c84cdc6ea5d93aae3fe455fccf8",
+        "version" : "2.1.2"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/crowdconnected/crowdconnected-ips-ios",
       "state" : {
-        "revision" : "c3117325dc4004d2e6a9f4796057a9ffcaf3ca79",
-        "version" : "2.0.0"
+        "revision" : "fce487639d6565349600d46c66dd904c11982435",
+        "version" : "2.1.2"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/crowdconnected/crowdconnected-shared-ios.git",
       "state" : {
-        "revision" : "0366bc54e6742f8cfbded218426f2843c8c8fb72",
-        "version" : "2.0.0"
+        "revision" : "b46b03cf3b53398b014e530ca95f3b05b2e1afcc",
+        "version" : "2.1.2"
       }
     },
     {
